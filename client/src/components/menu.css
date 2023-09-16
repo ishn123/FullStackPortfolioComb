@@ -1,0 +1,70 @@
+.menu__item + .menu__item {
+    /* border-top: 1rem solid #363e55; */
+  }
+  
+  .menu__item:nth-child(even) span {
+    animation-direction: reverse;
+  }
+  
+  .menu__link {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    white-space: nowrap;
+    font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    gap: 0.5em;
+    font-size: 4vmax;
+    padding: .65em 0;
+    line-height: 1;
+    position: relative;
+  }
+  
+  .menu__link--primary {
+    background: #5B2E48;
+  }
+  
+  .menu__link--secondary {
+    background: #585563;
+  }
+  
+  .menu__link--tertiary {
+    background: #749C75;
+  }
+  
+  .menu__link span {
+    display: block;
+    animation: marquee 25s linear normal infinite;
+    animation-play-state: running;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .menu__link:hover span {
+    animation-play-state: paused;
+  }
+  
+  .menu__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .3s;
+    mix-blend-mode: difference;
+    filter: saturate(0.5);
+  }
+  
+  .menu__background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @keyframes marquee {
+    to {
+      transform: translateX(-100%);
+    }
+  }

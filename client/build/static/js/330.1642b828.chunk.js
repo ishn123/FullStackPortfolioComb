@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[330],{988:function(e,t,i){i.r(t),i.d(t,{default:function(){return c}});i(791);var a=i.p+"static/media/hibye.0c85bc8a28fbbebb82a1.mp4",o=i(184);var c=function(){return(0,o.jsx)("div",{children:(0,o.jsx)("video",{src:a,autoPlay:!0,loop:!0,muted:!0,height:"300px",width:"450px",className:"hibye"})})}}}]);
+//# sourceMappingURL=330.1642b828.chunk.js.map

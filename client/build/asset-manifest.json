@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.792ce306.css",
+    "main.js": "/static/js/main.47569f7d.js",
+    "static/js/111.c112328f.chunk.js": "/static/js/111.c112328f.chunk.js",
+    "static/js/330.1642b828.chunk.js": "/static/js/330.1642b828.chunk.js",
+    "static/media/kpo.mp4": "/static/media/kpo.a3fa242ecff80d9e2706.mp4",
+    "static/media/jaal.mp4": "/static/media/jaal.65cf3a48cf05f40bf43f.mp4",
+    "static/media/33466.jpg": "/static/media/33466.0645a71d5d7ac6ad7b61.jpg",
+    "static/media/hibye.mp4": "/static/media/hibye.0c85bc8a28fbbebb82a1.mp4",
+    "static/media/gsmy.jpeg": "/static/media/gsmy.9b8bb7e4cef0d992ca84.jpeg",
+    "static/media/loh.jpeg": "/static/media/loh.59edb8e8f3872da849af.jpeg",
+    "static/media/Ishan.pdf": "/static/media/Ishan.eda40ab853e23886b738.pdf",
+    "static/media/sanyam_main_resume.pdf": "/static/media/sanyam_main_resume.a9682700102b83a95ffd.pdf",
+    "static/media/dev-ops-solid-svgrepo-com.png": "/static/media/dev-ops-solid-svgrepo-com.28858d30471d8f6786c1.png",
+    "index.html": "/index.html",
+    "main.792ce306.css.map": "/static/css/main.792ce306.css.map",
+    "main.47569f7d.js.map": "/static/js/main.47569f7d.js.map",
+    "111.c112328f.chunk.js.map": "/static/js/111.c112328f.chunk.js.map",
+    "330.1642b828.chunk.js.map": "/static/js/330.1642b828.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.792ce306.css",
+    "static/js/main.47569f7d.js"
+  ]
+}

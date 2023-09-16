@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[111],{238:function(e,t,o){o.r(t),o.d(t,{default:function(){return r}});o(791);var a=o.p+"static/media/kpo.a3fa242ecff80d9e2706.mp4",i=o(184);var r=function(){return(0,i.jsx)("div",{className:"three_3d",children:(0,i.jsx)("video",{src:a,autoPlay:!0,loop:!0,muted:!0,height:"300px",width:"450px"})})}}}]);
+//# sourceMappingURL=111.c112328f.chunk.js.map
