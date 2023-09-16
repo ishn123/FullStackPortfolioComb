@@ -19,17 +19,17 @@ app.use(exp.static(buildPath));
 
 
 const notifier = new youtube({
-    hubCallback:"https://chilly-snails-end.loca.lt/youtube/notifications"
+    hubCallback:"https://full-stack-port.onrender.com/youtube/notifications"
 })
 
 
 app.use("/youtube/notifications",notifier.listener());
-app.use((req, res, next) => {
+app.get("/",(req, res, next) => {
+    console.log(req);
     res.sendFile(path.join(buildPath,"index.html"));
   });
 
 app.post("/sendemail", async(req, res) => {
-
     const {email,message} = req.body;
     const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -45,9 +45,11 @@ app.post("/sendemail", async(req, res) => {
         text: `From email ${email} with message\n ${message}`
     })
     .then((data)=>{
+        console.log("Work done");
         res.sendStatus(201);
     })
     .catch((err)=>{
+        console.log("Work not done");
         console.log(err);
         res.sendStatus(501);
     }
@@ -56,7 +58,7 @@ app.post("/sendemail", async(req, res) => {
     
 })
 
-app.listen(process.env.PORT,()=>{
+app.listen(8000,()=>{
     console.log("Listening to Port 8000....");
 })
 notifier.subscribe(channelId);

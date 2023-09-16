@@ -8,7 +8,7 @@ function SideBar({dateState,id,backgroundColor,setBackgroundColor}) {
   const navigate = useNavigate();
 
   const navigateHandler = (path)=>{
-    console.log("ZOLO");
+    
     navigate(path);
   }
     const slideUp = ()=>{

@@ -56,7 +56,7 @@ function Navbar({showMenu,setShowMenu,mobile,toggleMenu,setText,id}) {
 
     const ele = document.getElementsByClassName("connect-card")[0];
 
-    console.log(ele);
+    
     ele.classList.add("connect-box-animation");
   
   }

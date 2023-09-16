@@ -86,7 +86,7 @@ function Hero() {
       });
 
       // Mouseenter
-      console.log(link.tl);
+      
       link.addEventListener("mouseenter", (e) => {
         enterAnimation(link, e, index);
       });

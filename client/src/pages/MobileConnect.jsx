@@ -8,18 +8,19 @@ import Footer from "../components/Footer";
 import SideBar from '../components/Footer';
 import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYoutube, faGithub, faXTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { ScrollTrigger } from 'gsap/all';
 import FrontendSkillsContainer from '../components/typeofskills/FrontendSkillsContainer';
 import BackendSkillsContainer from '../components/typeofskills/BackendSkillsContainer';
 import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
-
+import IshanResume from "../Ishan.pdf";
+import SanyamResume from "../sanyam_main_resume.pdf";
 import "../components/styles/KOPL.css"
 import emailjs from "@emailjs/browser";
 import LazySpinnerLoader from '../LazyComponents/LazySpinnerLoader';
-const V2 = lazy(()=>import("../components/Video2"));
+const V2 = lazy(() => import("../components/Video2"));
+
 // gsap.registerPlugin(ScrollTrigger);
 // let tl = gsap.timeline();
 // tl.to(".content-header-skill",{
@@ -218,7 +219,7 @@ function MobileConnect() {
       });
 
       // Mouseenter
-      console.log(link.tl);
+      
       link.addEventListener("mouseenter", (e) => {
         enterAnimation(link, e, index);
       });
@@ -358,13 +359,45 @@ function MobileConnect() {
 
     });
   }, [])
+  const showResumeAnimation = (event) => {
+
+    event.stopPropagation()
+    const r1 = document.getElementsByClassName("side-lancer-1")[0];
+    const r2 = document.getElementsByClassName("side-lancer-2")[0];
+    if (r1.classList.contains("showit")) {
+      r1.classList.remove("showit");
+      r2.classList.remove("showit");
+    } else {
+      r1.classList.add("showit");
+      r2.classList.add("showit");
+    }
+
+
+  }
+  const showConnectBox = () => {
+    if (window.innerWidth <= 600) {
+      navigate('/connect');
+      return
+    }
+    const ele = document.getElementsByClassName("connect-card")[0];
+
+
+    ele.classList.add("connect-box-animation");
+
+  }
   return (
     <>
       <Transition>
       </Transition>
       <div className="Skills-Page">
-        <div id="side"> <IoChatbubbleEllipses id='ico' ></IoChatbubbleEllipses>
-          <a href="https://drive.google.com/file/d/1TwE88G_fy0x3Q60NFUfIK9sgOSLrrmXA/view?usp=sharing" target="_blank"><div id="resume">Resume</div></a>
+        <div id="side" onClick={() => showConnectBox()}> <IoChatbubbleEllipses id='ico' ></IoChatbubbleEllipses>
+          <div className="side-lancer-1" onClick={(event) => event.stopPropagation()}>
+            <a href={IshanResume} target="_blank">I</a>
+          </div>
+          <div className="side-lancer-2" onClick={(event) => event.stopPropagation()}>
+            <a href={SanyamResume} target="_blank">S</a>
+          </div>
+          <div id="resume" onClick={(event) => showResumeAnimation(event)}>Resume</div>
         </div>
         <div id="minicircle"></div>
         <div id="main" data-scroll-container data-scroll-speed="2">
