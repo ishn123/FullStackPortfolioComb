@@ -385,7 +385,7 @@ function MobileConnect() {
     <>
       <Transition>
       </Transition>
-      <div className="Skills-Page mobileconnect">
+      <div className="Skills-Page">
         <div id="side" onClick={() => showConnectBox()}> <IoChatbubbleEllipses id='ico' ></IoChatbubbleEllipses>
           <div className="side-lancer-1" onClick={(event) => event.stopPropagation()}>
             <a href={IshanResume} target="_blank">I</a>
