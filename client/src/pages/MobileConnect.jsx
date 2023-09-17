@@ -10,10 +10,6 @@ import { scrollAnimation } from '../components/Navbar';
 import { gsap } from 'gsap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faYoutube, faGithub, faXTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { ScrollTrigger } from 'gsap/all';
-import FrontendSkillsContainer from '../components/typeofskills/FrontendSkillsContainer';
-import BackendSkillsContainer from '../components/typeofskills/BackendSkillsContainer';
-import ProSkillsContainer from '../components/typeofskills/ProSkillsContainer';
 import IshanResume from "../Ishan.pdf";
 import SanyamResume from "../sanyam_main_resume.pdf";
 import "../components/styles/KOPL.css"
@@ -389,7 +385,7 @@ function MobileConnect() {
     <>
       <Transition>
       </Transition>
-      <div className="Skills-Page">
+      <div className="Skills-Page mobileconnect">
         <div id="side" onClick={() => showConnectBox()}> <IoChatbubbleEllipses id='ico' ></IoChatbubbleEllipses>
           <div className="side-lancer-1" onClick={(event) => event.stopPropagation()}>
             <a href={IshanResume} target="_blank">I</a>
