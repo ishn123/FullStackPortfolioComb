@@ -60,6 +60,8 @@ function MobileConnect() {
     }).then(res => {
       if (res.status === 201) {
         setOnSuccess("Sent");
+        setemail("");
+        setmessage("");
       } else {
         setOnSuccess("Failed!")
       }
@@ -396,8 +398,8 @@ function MobileConnect() {
           <div id="resume" onClick={(event) => showResumeAnimation(event)}>Resume</div>
         </div>
         <div id="minicircle"></div>
-        <div id="main" data-scroll-container data-scroll-speed="2">
-          <Navbar showMenu={showMenu} setShowMenu={setShowMenu} mobile={mobileMenu} toggleMenu={setMobileMenu} id="nav"></Navbar>
+        <div id="main" data-scroll-container data-scroll-speed="2" >
+          <Navbar showMenu={showMenu} setShowMenu={setShowMenu} mobile={mobileMenu} toggleMenu={setMobileMenu} id="nav" style={{position:"fixed"}}></Navbar>
 
 
 
