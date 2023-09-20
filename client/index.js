@@ -24,7 +24,7 @@ const notifier = new youtube({
 
 
 app.use("/youtube/notifications",notifier.listener());
-app.get("/",(req, res, next) => {
+app.get("*",(req, res, next) => {
     console.log(req);
     res.sendFile(path.join(buildPath,"index.html"));
   });
