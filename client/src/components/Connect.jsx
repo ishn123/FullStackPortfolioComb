@@ -20,6 +20,8 @@ function Connect() {
     }).then(res=>{
       if(res.status === 201){
         setOnSuccess("Sent");
+        setemail("");
+        setmessage("");
       }else{
         setOnSuccess("Failed!")
       }
